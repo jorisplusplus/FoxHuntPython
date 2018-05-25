@@ -124,8 +124,11 @@ def question(bot, update):
     chat_id = update.message.chat_id
     if group.checkAnswer(answer):
         checkpoint = group.getCheckpoint()
-        update.message.reply_text("That is correct, you are now looking for point "+str(checkpoint), reply_markup=ReplyKeyboardRemove())
-        bot.send_photo(chat_id=chat_id, photo=open('fotos/'+str(checkpoint)+'.jpeg', 'rb'))
+        if checkpoint == -1:
+            update.message.reply_text("Well done. You have finished the foxhunt.\n Your score is: "+str(group.getScore()))
+        else:
+            update.message.reply_text("That is correct, you are now looking for point "+str(checkpoint), reply_markup=ReplyKeyboardRemove())
+            bot.send_photo(chat_id=chat_id, photo=open('fotos/'+str(checkpoint)+'.jpeg', 'rb'))
         return ConversationHandler.END
     else:
         reply_keyboard = [['A', 'B', 'C', 'D']]
