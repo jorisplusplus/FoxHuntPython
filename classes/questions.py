@@ -75,7 +75,7 @@ What is the general expression for the lorentz force that is exerted by an elect
 questionsDiff = []
 answerEasy = ["B", "B", "A", "A", "C", "B", "D", "C", "C", "D"]
 answerDiff = []
-codes = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+codes = ["forecast", "neighbour", "pledge", "drawing", "attitude", "proclaim", "judgment", "mother", "forestry", "disorder"]
 
 def getQuestion(checkpoint, diff):
     if diff:
