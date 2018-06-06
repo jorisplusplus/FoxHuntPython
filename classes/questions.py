@@ -155,6 +155,30 @@ answerEasy = ["B", "B", "A", "A", "C", "B", "D", "C", "C", "D"]
 answerDiff = ["B", "D", "A", "C", "D", "B", "A", "C", "B", "D"]
 codes = ["forecast", "neighbour", "pledge", "drawing", "attitude", "proclaim", "judgment", "mother", "forestry", "disorder"]
 
+routes = list()
+currentRoute = 0
+maxRoutes = 0
+
+def initRoute():
+    global currentRoute
+    global maxRoutes
+    global routes
+    file = open("routes.txt", "r")
+    for line in file:
+        points = line.split(",")
+        routes.append(points)
+        maxRoutes += 1
+
+def getRoute():
+    global currentRoute
+    global maxRoutes
+    global routes
+    route = routes[currentRoute]
+    currentRoute += 1
+    if currentRoute == maxRoutes:
+        currentRoute = 0
+    return route
+
 def getQuestion(checkpoint, diff):
     if diff:
         return questionsDiff[checkpoint]

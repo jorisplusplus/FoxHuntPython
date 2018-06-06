@@ -3,7 +3,7 @@
 #
 # Simple Bot to reply to Telegram messages
 # This program is dedicated to the public domain under the CC0 license.
-from .questions import getQuestion, checkAnswer, checkCode
+from .questions import getQuestion, checkAnswer, checkCode, getRoute
 import time
 
 timepenalty = 30
@@ -50,6 +50,9 @@ class Group:
             return sum(self.questionTime)
         else:
             return 3600
+
+    def setOrder(self):
+        self.order = getRoute()
 
     def getQuestion(self):
         self.startTime = time.time()

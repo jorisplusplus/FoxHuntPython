@@ -20,6 +20,7 @@ bot.
 import logging
 import operator
 import pickle
+from classes.questions import initRoute
 
 import os.path
 from classes.group import Group
@@ -163,6 +164,7 @@ def printGroups(bot, update):
     message = "Groups:\n"
     for id,group in groups.items():
         message = message + "ID: " + str(id) + group.getStats()
+        message = message + str(group.order) + "\n"
     group = groups[update.message.chat_id]
     if group.isAdmin():
         update.message.reply_text(message)
@@ -239,6 +241,8 @@ def main():
     token = token.strip()
     logger.info("token: %s",token)
     updater = Updater(str(token.strip()))
+
+    initRoute()
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
