@@ -189,7 +189,6 @@ def beginHunt(bot, update):
     chat_id = update.message.chat_id
     group = groups[chat_id]
     if group.hasPaid():
-        group.setOrder()
         checkpoint = group.getCheckpoint()
         update.message.reply_text("Here is your clue for point"+str(checkpoint)+", let the hunt begin.")
         bot.send_photo(chat_id=chat_id, photo=open('fotos/'+str(checkpoint)+'.jpeg', 'rb'))

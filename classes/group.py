@@ -14,10 +14,11 @@ class Group:
         self.diff = False
         self.paid = False
         self.admin = False
-        self.order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        self.order = getRoute()
         self.questionTime = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.position = 0
         self.finished = False
+        self.hasre
 
     def getName(self):
         return self.name
@@ -50,9 +51,6 @@ class Group:
             return sum(self.questionTime)
         else:
             return 3600
-
-    def setOrder(self):
-        self.order = getRoute()
 
     def getQuestion(self):
         self.startTime = time.time()
