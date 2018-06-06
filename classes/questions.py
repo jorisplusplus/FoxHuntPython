@@ -100,7 +100,7 @@ Consider a feedback control scheme , where G(s) =1s2+ 8s+ 7.A. Consider the cont
   A:55
   B:20
   C:70
-  D:2]""",
+  D:69""",
 
 """Electromechanics(hard):
 A series dc motor that can be treated as magnetically linear is operating at 1200 rpm with
