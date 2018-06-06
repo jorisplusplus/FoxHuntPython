@@ -168,4 +168,4 @@ def checkAnswer(checkpoint, diff, answer):
         return answer == answerEasy[checkpoint]
 
 def checkCode(checkpoint, code):
-    return codes[checkpoint] == code
+    return codes[checkpoint].lower() == code.lower()
