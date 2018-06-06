@@ -18,7 +18,6 @@ class Group:
         self.questionTime = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.position = 0
         self.finished = False
-        self.hasre
 
     def getName(self):
         return self.name
