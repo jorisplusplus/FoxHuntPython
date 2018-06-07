@@ -6,7 +6,7 @@
 from .questions import getQuestion, checkAnswer, checkCode, getRoute
 import time
 
-timepenalty = 30
+timepenalty = 120
 
 class Group:
     def __init__(self, name):
