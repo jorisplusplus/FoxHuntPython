@@ -166,7 +166,7 @@ def initRoute():
     file = open("routes.txt", "r")
     for line in file:
         points = line.split(",")
-        routes.append(list(map(int, points)))
+        routes.append(points)
         maxRoutes += 1
 
 def getRoute():
