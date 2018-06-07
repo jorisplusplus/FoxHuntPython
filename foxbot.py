@@ -132,7 +132,7 @@ def question(bot, update):
             bot.send_photo(chat_id=chat_id, photo=open('fotos/'+str(checkpoint)+'.jpeg', 'rb'))
         return ConversationHandler.END
     else:
-        reply_keyboard = [['A', 'B', 'C', 'D']]
+        reply_keyboard = [['A', 'B'], ['C', 'D']]
         update.message.reply_text("That is incorrect, try again",
          reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True))
         return QUESTION
