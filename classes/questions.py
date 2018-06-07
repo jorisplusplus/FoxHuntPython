@@ -76,9 +76,9 @@ What is the general expression for the lorentz force that is exerted by an elect
 questionsDiff = {'0':"""Electromagnetics II (hard):
 Consider the time-harmonic electric field component of a uniform plane wave, given by E=E0sin(ωt−k0x+ϕ)azV/m
 Give an expression for the corresponding magnetic field component.
-  A: H=−Z−10E0cos(ωt−k0x+ϕ) **ay**  A/m
-  B: H=−Z−10E0sin(ωt−k0x+ϕ) **ay** A/m
-  C: H=−Z0E0sin(ωt−k0x+ϕ) **ay**  A/m
+  A: H=−Z−10E0cos(ωt−k0x+ϕ) āy  A/m # if these don't work, try U+0101 character
+  B: H=−Z−10E0sin(ωt−k0x+ϕ) āy A/m
+  C: H=−Z0E0sin(ωt−k0x+ϕ) āy  A/m
   D: the specified electric field is not consistent with Maxwell’s equations""",
 
 '1':"""Mathematics II(hard):
