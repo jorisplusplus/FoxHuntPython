@@ -153,7 +153,7 @@ In the Marvel movies, what is the name of the guy with the red suit powered by a
 
 answerEasy = ["B", "B", "A", "A", "C", "B", "D", "C", "C", "D"]
 answerDiff = ["B", "D", "A", "C", "D", "B", "A", "C", "B", "D"]
-codes = ['0':"forecast", '1':"neighbour", '2':"pledge", '3':"drawing", '4':"attitude", '5':"proclaim", '6':"judgment", '7':"mother", '8':"forestry", 'sante\n':"disorder"]
+codes = {'0':"forecast", '1':"neighbour", '2':"pledge", '3':"drawing", '4':"attitude", '5':"proclaim", '6':"judgment", '7':"mother", '8':"forestry", 'sante\n':"disorder"}
 
 routes = list()
 currentRoute = 0
