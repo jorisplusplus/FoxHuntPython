@@ -151,8 +151,8 @@ In the Marvel movies, what is the name of the guy with the red suit powered by a
 
 
 
-answerEasy = {'0':"B", '1':"B", '2':"A", '3':"A", '4':"C", '5':"B", '6':"D", '7':"C", '8':"C", 'sante\n':"D"]
-answerDiff = {'0':"B", '1':"D", '2':"A", '3':"C", '4':"D", '5':"B", '6':"A", '7':"C", '8':"B", 'sante\n':"D"]
+answerEasy = {'0':"B", '1':"B", '2':"A", '3':"A", '4':"C", '5':"B", '6':"D", '7':"C", '8':"C", 'sante\n':"D"}
+answerDiff = {'0':"B", '1':"D", '2':"A", '3':"C", '4':"D", '5':"B", '6':"A", '7':"C", '8':"B", 'sante\n':"D"}
 codes = {'0':"forecast", '1':"neighbour", '2':"pledge", '3':"drawing", '4':"attitude", '5':"proclaim", '6':"judgment", '7':"mother", '8':"forestry", 'sante\n':"disorder"}
 
 routes = list()
