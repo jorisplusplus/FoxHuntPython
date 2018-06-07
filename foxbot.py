@@ -192,7 +192,7 @@ def beginHunt(bot, update):
         update.message.reply_text("You have finished the foxhunt.")
     elif group.hasPaid():
         checkpoint = group.getCheckpoint()
-        update.message.reply_text("Here is your clue for point"+str(checkpoint)+", let the hunt begin.")
+        update.message.reply_text("Here is your clue for point "+str(checkpoint)+", let the hunt begin.")
         bot.send_photo(chat_id=chat_id, photo=open('fotos/'+str(checkpoint)+'.jpeg', 'rb'))
     else:
         update.message.reply_text("You have not paid, you cannot start the hunt.")
